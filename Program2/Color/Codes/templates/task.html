@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <titel>My Web Page</titel>
+        <script>
+            function hideTextbox()
+            {
+                document.getElementById('magic').style.display="none";
+            }
+
+            function hidePara()
+            {
+                document.getElementById('para').style.display="block";
+            }
+        </script>
+    </head>
+    <body style="background-color:rgb(174, 170, 181)">
+        <form>
+            <lable>Magic !</lable> <input type="text" id="magic"/><br><br>
+            <input type="button" onclick="hideTextbox()" style="color:darkorange" size="80px">Click </button><br>
+
+
+
+            <p onclick="hidePara()" style="color:rgb(5, 101, 5)">Click here is display another paragraph</p><br>
+            <p id="para" hidden style="color:crimson" > This is another Paragraph</p>
+        </form>
+    </body>
+</html>

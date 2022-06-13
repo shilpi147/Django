@@ -1,0 +1,33 @@
+{% load static %}
+
+
+<html>
+    <head>
+        <title>Creation of Table</title>
+        <script>
+            function hideImage()
+            {
+            document.getElementById('dog').style.display='none';
+            }
+        </script>
+    </head>
+    <body>
+        <table border="2">
+        <tr>
+            <th>Sl.No</th>
+            <th>Animas</th>
+            <th>Images</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Dog</td>
+            <td ><input type="image" src="{% static 'images/dog.jpg' %}" height="200" width="200" id="dog" onclick="hideImage()"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Cat</td>
+            <td><a href="http://www.google.com"><img src="{% static 'images/cat.jpg' %}" height="200" width="200"></a></td>
+        </tr>
+    </table>
+    </body>
+</html>
