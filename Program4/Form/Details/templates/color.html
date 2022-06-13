@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function colorChange()
+            {
+                document.getElementById('para').style.color = "green";
+            }
+            function paraHide()
+            {
+                document.getElementById('para2').style.display = "none";
+            }
+        </script>
+
+    </head>
+    <body style="background-color:bisque;">
+        <h1 style="color:maroon">Web page</h1>
+        <p style="color:blueviolet;font-family: 'Times New Roman', Times, serif;" id="para2">This is first line</p>
+        <a href="first">Click here</a>
+        <p id="para" onclick="colorChange()">Click  here to change the color of the para</p>
+        <button onclick="paraHide()">Submit</button>
+    </body>
+</html>
