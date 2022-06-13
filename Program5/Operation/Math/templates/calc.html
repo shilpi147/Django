@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script>
+            
+
+            function add()
+            {
+                a=parseInt(document.getElementById('one').value);
+                b=parseInt(document.getElementById('two').value);
+                var c=(a + b);
+                
+                alert("Sum is "+c);
+                
+            }
+
+            function sub()
+            {
+                c= (a-b);
+                alert("Subtraction is "+c);
+            }
+
+            function mul()
+            {
+                c=(a * b);
+                alert("Product is "+c);
+            }
+
+            function div()
+            {
+                c= (a/b);
+                alert("Quotient is "+c);
+            }
+
+            
+        </script>
+
+    </head>
+    <body style=background-color:darkcyan;>
+        <h1 align="center"> Arithemetic Operations</h1>
+        <form align="center">
+            
+            <label><b>Enter first number :</b> </label>        <input type="text" id="one"/><br><br>
+            <label><b>Enter second number :</b></label>    <input type="text" id="two"/><br><br>
+            
+            
+            <input type="radio" onclick="add()" name="Arithemetic"/><b>Add</b>
+            <input type="radio" onclick="sub()" name="Arithemetic"/><b>Sub</b>
+            <input type="radio" onclick="mul()" name="Arithemetic"/><b>Mul</b>
+            <input type="radio" onclick="div()" name="Arithemetic"/><b>Div</b>
+        </form>
+    </body>
+</html>
