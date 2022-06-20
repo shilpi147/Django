@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Student reg form</title>
+    </head>
+    <body style="background-color: blue">
+        <h1>Student Registration Form</h1>
+        <form action="studentinfo" method="post">
+            {% csrf_token %}
+            <b>Enter your Name</b> <input type="text" name="name" />
+            <br>
+            <br>
+            <b>Enter your Age</b> <input type="number" name="age" /> 
+            <br>
+            <br>
+            <b>Enter your Gender </b> 
+            <input type="radio" name="gender" value="Male"/>Male 
+            <input type="radio" name="gender" value="Female"/>Female
+            <br>
+            <br>
+            <b>Enter your State</b> <select name="state" >
+                <option value="">Choose your state</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Maharastra">Maharastra</option>
+                <option value="Andra">Andra</option>
+            </select>
+            <br>
+            <br>
+            <b>Enter your Course :</b> 
+            <br>
+            <br>
+            <input type="checkbox" name="course" value="C Programming"/> C Programming     
+            <input type="checkbox" name="course" value="C++ Programming"/> C++ Programming   
+            <input type="checkbox" name="course" value="Python Programming"/> Python Programming
+            <input type="checkbox" name="course" value="Java Programming"/> Java Programming  
+            <br>
+            <br>
+            <input type="submit" value="Register" />
+        </form>
+    </body>
+</html>

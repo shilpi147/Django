@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Emp reg form</title>
+    </head>
+    <body style="background-color:aquamarine">
+        <h1> Employee Registartion Form</h1>
+        <form action="insert" method="post">
+            {% csrf_token %}
+            Enter your Name <input type="text" name="name" /> <br><br>
+            Enter your Username <input type="text" name="username" /> <br><br>
+            Enter your Password <input type="password" name="password" /> <br><br>
+            Enter your Age <input type="number" name="age" /> <br> <br>
+            Enter your Address <input type="text" name="address" /> <br> <br>
+            Enter your Phone_Number <input type="tel" name="phone" /> <br> <br>
+            <input type="submit" value="Register" />
+        </form>
+    </body>
+</html>
