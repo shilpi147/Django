@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body style="background-color:aquamarine">
+        <form action="Submit" method="post">
+            {% csrf_token %}
+        <h1> Course Registration Form</h1>
+        <label>Enter Name:</label><input type="text" name="name" placeholder="Enter Name Here" /><br><br>
+        <label>Enter Age:</label><input type="number" name="age" placeholder="Enter Age Here"/><br><br>
+        <label>Enter Phone Number:</label><input type="tel" name="phone" placeholder="123-456-7890"/><br><br>
+        <label>Enter Email ID:</label><input type="email" name="mail" placeholder="example@gamil.com"/><br><br>
+        <label>Enter Qualification:</label><input type="text" name="quali" placeholder="Eg: MCA,BCA,MBA etc"/><br><br>
+        <label>Enter Address:</label><input type="text" name="address" placeholder="Enter Address Here"/><br><br>
+        <label>Select Course:</label>
+        <input type="checkbox" name="course" value="Python"/>Python
+        <input type="checkbox" name="course" value="Java"/>Java
+        <input type="checkbox" name="course" value="PHP"/>PHP
+        <input type="checkbox" name="course" value="C++"/>C++
+        <input type="checkbox" name="course" value="C"/>C
+        <input type="checkbox" name="course" value="Ruby"/>Ruby
+        <input type="checkbox" name="course" value="R"/>R
+        <input type="checkbox" name="course" value="C#"/>C#
+        <input type="checkbox" name="course" value=".NET"/>.NET
+        <input type="checkbox" name="course" value="SQL"/>SQL
+        <input type="checkbox" name="course" value="HTML"/>HTML
+        <input type="checkbox" name="course" value="Javascript"/>Javascript
+        <input type="checkbox" name="course" value="GoLang"/>GoLang<br><br>
+        <label>Enter Alternate Numbr:</label><input type="tel" name="alter" placeholder="123-456-7890"/><br><br>
+        <label>Select Gender:</label>
+        <input type="radio" name="gender" value="Male"/>Male
+        <input type="radio" name="gender" value="Female"/>Female
+        <br><br>
+        <label>Select Source :</label>
+        <select name="source">
+            <option value="">Where did you hear us?</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Google">Google</option>
+            <option value="Family/Friends">Family/Friends</option>
+        </select>
+        <br><br>
+        <label>Enter Experience:</label><input type="number" name="exp"/><br><br>
+        <label>Planning to start the Course:</label>
+        <input type="radio" name="plan" value="Immdiately"/>Immdiately
+        <input type="radio" name="plan" value="After a Week"/>After a Week
+        <input type="radio" name="plan" value="Within a Months"/>Within a Months
+        <input type="radio" name="plan" value="More than a Month"/>More than a Month
+        
+        <br><br>
+        <label>Do you need job assistance?:</label>
+        <input type="radio" name="job" value="Yes"/>Yes
+        <input type="radio" name="job" value="No"/>No
+        <br><br>
+        <label>Batch Preferred</label>
+        <input type="radio" name="batch" value="Weekdays"/>Weekdays
+        <input type="radio" name="batch" value="Weekend"/>Weekend
+        <input type="radio" name="batch" value="One to One"/>One to One
+        <input type="radio" name="batch" value="Fast Track"/>Fast Track
+        <br><br>
+        <input type="submit" value="Register"/>
+
+    </form>
+    </body>
+</html>
